@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* ========================================= */
+/* 		   		General Styling	 			 */
+/* ========================================= */
+
+@import "assets/variables";
+@import "assets/general";
+@import "assets/functions";
+
+/* ========================================= */
+/* 		   			LAYOUT 					 */
+/* ========================================= */
+
+@import "layout/form";
+@import "layout/header";
+@import "layout/icons";
+@import "layout/center";

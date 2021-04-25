@@ -1,0 +1,38 @@
+@import '../../../assets/scss/variables';
+@import "../../../assets/scss/breakpoints.scss";
+
+
+
+.nav-item {
+    color: $paragraph_dark;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    align-self: baseline;
+    margin: auto 0 auto 3rem;  
+
+    @include media("<=collapse") {
+        margin: auto 0;
+        padding-top: 1rem;
+    }
+
+    .active,.active:focus, active:active {
+        color: #FFFFFF;
+    }
+
+    .active:hover {
+        color: #FFFFFF;
+    }
+}
+
+.nav-item.button {
+    padding: 0.5rem 1.5rem;
+    background-color: $bg_shortify;
+    color: $bg_pale_white;
+    border-radius: 5px;
+}
+
+.nav-item.button:hover {
+    cursor:pointer;
+}
+

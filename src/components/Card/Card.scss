@@ -1,0 +1,96 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/breakpoints.scss";
+
+.card-general {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 25%;
+  margin: 0 auto;
+  border-radius: 12px;
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  .container {
+    padding: 0.5rem 3rem;
+
+    h3 {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+  }
+
+  @include media("<=phone") {
+    margin-left: 5%;
+    margin-right: 5%;
+
+    .title {
+      font-size: 1.5rem;
+      color: $header_dark;
+      font-weight: 700;
+      letter-spacing: 0.15rem;
+      color: #222831;
+    }
+
+    .description {
+      font-weight: 400;
+      font-size: 1rem;
+      color: $paragraph_dark;
+      line-height: 1.8;
+      margin-top: 2.5rem;
+      margin-bottom: 3rem;
+      letter-spacing: 0.03rem;
+      color: #393e46;
+    }
+
+    button {
+      background-color: $bg_shortify;
+      border: none;
+      font-size: 1rem;
+      color: $bg_pale_white;
+      border-radius: 5px;
+      font-weight: 400;
+      outline: none;
+    }
+
+    .showcase-img {
+      .img-fluid {
+        width: 38%;
+      }
+    }
+
+    input {
+      width: calc(70% - 1.2rem);
+    }
+
+    .input-area {
+      width: 100%;
+    }
+
+    button {
+      width: 30%;
+    }
+  }
+
+  @include media(">phone", "<=tablet") {
+    width: 65%;
+  }
+
+  @include media(">tablet", "<=desktop") {
+    width: 40%;
+  }
+
+  @include media("<=tablet") {
+    width: 70%;
+  }
+}
+
+.card-general:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+

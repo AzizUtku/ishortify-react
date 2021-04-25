@@ -1,0 +1,251 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/breakpoints.scss";
+
+.body {
+  .form-group {
+    max-width: 360px;
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}
+.Showcase {
+  height: 90vh;
+  transition: 0.3s ease;
+  padding-top: 4%;
+
+  .form-field {
+    background: #f5f5f5;
+    padding: 1rem 2em;
+    border-width: 0;
+    border-radius: 5px;
+    color: #131313;
+
+    display: block;
+    width: 100%;
+    -webkit-appearance: none;
+  }
+
+  .form-group {
+    position: relative;
+    display: flex;
+    width: 100%;
+    & > span,
+    .form-field {
+      white-space: nowrap;
+      display: block;
+      &:not(:first-child):not(:last-child) {
+        border-radius: 0;
+      }
+      &:first-child {
+        border-radius: 6px 0 0 6px;
+      }
+      &:last-child {
+        border-radius: 0 6px 6px 0;
+      }
+      &:not(:first-child) {
+        margin-left: -1px;
+      }
+    }
+
+    .form-field {
+      position: relative;
+      z-index: 1;
+      flex: 1 1 auto;
+      width: 1%;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    & > span {
+      text-align: center;
+      padding: 1rem 12px;
+      color: $paragraph_dark;
+      background: #dfdfdf;
+      border: #7030be;
+      transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+    }
+  }
+
+  .title {
+    font-size: 3rem;
+    color: $header_dark;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    text-align: center;
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: $paragraph_dark;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  button.large-btn {
+    background-color: $bg_shortify;
+    border: none;
+    color: $bg_pale_white;
+    font-weight: 400;
+    outline: none;
+    font-size: 1.1rem;
+    padding: 0.95rem 0;
+    border-radius: 3px;
+    margin-left: 1.2rem;
+    width: 20%;
+  }
+
+  input {
+    background: #f5f5f5;
+    padding: 1rem 2em;
+    border-width: 0;
+    border-radius: 5px;
+    width: calc(80% - 1.2rem);
+    color: #131313;
+  }
+
+  input:focus {
+    outline: none !important;
+    border: 0.5px solid #7030be;
+    box-shadow: 0 0 1px #719ece;
+  }
+
+  .input-area {
+    margin: 0rem auto 0 auto;
+    width: 50%;
+
+    .input-couple {
+      margin: 0 auto;
+    }
+  }
+
+  .showcase-img {
+    display: flex;
+
+    .img-fluid {
+      width: 35%;
+      margin: 0 auto;
+    }
+  }
+
+  @include media("<=phone") {
+    margin-left: 5%;
+    margin-right: 5%;
+
+    .title {
+      font-size: 1.5rem;
+      color: $header_dark;
+      font-weight: 700;
+      letter-spacing: 0.15rem;
+      color: #222831;
+    }
+
+    .description {
+      font-weight: 400;
+      font-size: 1rem;
+      color: $paragraph_dark;
+      line-height: 1.8;
+      margin-top: 2.5rem;
+      margin-bottom: 3rem;
+      letter-spacing: 0.03rem;
+      color: #393e46;
+    }
+
+    button.large-btn {
+      background-color: $bg_shortify;
+      border: none;
+      font-size: 1rem;
+      color: $bg_pale_white;
+      border-radius: 5px;
+      font-weight: 400;
+      outline: none;
+    }
+
+    .showcase-img {
+      .img-fluid {
+        width: 38%;
+      }
+    }
+
+    input {
+      width: calc(70% - 1.2rem);
+    }
+
+    .input-area {
+      width: 100%;
+    }
+
+    button.large-btn {
+      width: 30%;
+    }
+  }
+
+  @include media(">phone", "<=tablet") {
+    margin-left: 5%;
+    margin-right: 5%;
+
+    .title {
+      font-size: 2.2rem;
+      color: $header_dark;
+      font-weight: 700;
+      letter-spacing: 0.05rem;
+    }
+
+    .description {
+      font-weight: 400;
+      font-size: 1.1rem;
+      color: $paragraph_dark;
+      line-height: 1.8;
+      margin-top: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    button.large-btn {
+      background-color: $bg_shortify;
+      border: none;
+      font-size: 1.1rem;
+      color: $bg_pale_white;
+      border-radius: 5px;
+      font-weight: 400;
+      outline: none;
+    }
+
+    .showcase-img {
+      .img-fluid {
+        width: 38%;
+      }
+    }
+
+    input {
+      width: calc(70% - 1.2rem);
+    }
+
+    .input-area {
+      width: 100%;
+    }
+
+    button.large-btn {
+      width: 30%;
+    }
+  }
+
+  @include media(">tablet", "<=desktop") {
+    margin-left: 5%;
+    margin-right: 5%;
+
+    .showcase-img {
+      .img-fluid {
+        width: 38%;
+      }
+    }
+  }
+
+  @include media("<=tablet") {
+    .showcase-img {
+      .img-fluid {
+        width: 38%;
+      }
+    }
+  }
+}

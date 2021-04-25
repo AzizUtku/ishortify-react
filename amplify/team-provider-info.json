@@ -1,0 +1,25 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cs443linkshortenerma-dev-125948-authRole",
+      "UnauthRoleArn": "arn:aws:iam::023604664693:role/amplify-cs443linkshortenerma-dev-125948-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::023604664693:role/amplify-cs443linkshortenerma-dev-125948-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-cs443linkshortenerma-dev-125948-deployment",
+      "UnauthRoleName": "amplify-cs443linkshortenerma-dev-125948-unauthRole",
+      "StackName": "amplify-cs443linkshortenerma-dev-125948",
+      "StackId": "arn:aws:cloudformation:eu-central-1:023604664693:stack/amplify-cs443linkshortenerma-dev-125948/fb4408f0-a5ac-11eb-b62f-02285a8584fc",
+      "AmplifyAppId": "d1s8hi3u2nklpb"
+    },
+    "categories": {
+      "auth": {
+        "cs443linkshortenermac795e783": {
+          "userPoolId": "eu-central-1_u8IDyF30X",
+          "userPoolName": "BusinessUsers",
+          "webClientId": "7o5s8mojga7ko7ne1hrtquslhs",
+          "nativeClientId": "66lf6vv405pgnaptpvtecclkbj"
+        }
+      }
+    }
+  }
+}

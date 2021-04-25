@@ -1,0 +1,85 @@
+@import './assets/scss/variables';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import './assets/scss/style.scss';
+
+.card-body {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) !important;
+  transition: 0.3s !important;
+  border-radius: 12px !important;
+}
+
+button {
+  background-color: $bg_shortify;
+  border: none;
+  color: $bg_pale_white;
+  font-weight: 400;
+  outline: none;
+  font-size: 1.1rem;
+  padding: 0.95rem 0;
+  border-radius: 3px;
+  margin-left: 1.2rem;
+  width: 20%;
+}
+
+button.btn-icon {
+  width: inherit;
+  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+  transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
+  background-color: #EFEFEF;
+}
+
+.mt-8 {
+  margin-top: 3rem;
+}
+
+.inline-block {
+  display: inline-block !important;
+}
+
+input {
+  background: #f5f5f5;
+  padding: 1rem 2em;
+  border-width: 0;
+  border-radius: 5px;
+  width: calc(80% - 1.2rem);
+  color: #131313;
+}
+
+input:focus {
+  outline: none !important;
+  border: 0.5px solid #7030be;
+  box-shadow: 0 0 1px #719ece;
+}
+
+.input-area {
+  margin: 2.5rem auto 0 auto;
+  width: 50%;
+
+  .input-couple {
+    margin: 0 auto;
+  }
+}
+
+.mdc-snackbar {
+  top: 1rem;
+  bottom: initial;
+}
+
+.snackbar-error {
+  .mdc-snackbar__surface {
+    background-color: #C90330;
+  }
+}
+
+.snackbar-success {
+  .mdc-snackbar__surface {
+    background-color: #333333;
+  }
+}

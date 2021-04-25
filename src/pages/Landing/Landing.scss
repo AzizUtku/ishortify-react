@@ -1,0 +1,45 @@
+@import "../../assets/scss/variables";
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.landing {
+  cursor: default;
+  text-align: left;
+  .wawe {
+    display: block !important;
+    position: absolute;
+    bottom: 0;
+    line-height: 0;
+    height: 35vh;
+  }
+
+  .nav-item {
+    margin-left: 0rem;
+  }
+
+  .empty-line {
+    display: block;
+    margin-top: -8px;
+  }
+
+  .text-shortify-color {
+    color: #7030be;
+  }
+
+  ::placeholder {
+    color: #afb1b4;
+    opacity: 1;
+  }
+
+  :-ms-input-placeholder {
+    color: #afb1b4;
+  }
+
+  ::-ms-input-placeholder {
+    color: #afb1b4;
+  }
+}
